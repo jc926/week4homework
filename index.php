@@ -34,9 +34,10 @@ while (($lastPos = strpos($date, "/" , $lastPos))!== false) {
 
 
 foreach ($positions as $value) {
-    echo $value ."<br />";
+    echo $value."<br>";
 }
 echo "<br><br>";
 
+echo str_word_count($date);
 
 ?>
