@@ -44,9 +44,13 @@ echo "<br><br>";
 echo strlen($date);
 echo "<br><br>";
 
+echo ord($date);
+echo "<br><br>";
 
+echo "<br><br>";
 
-
+echo "<br><br>";
+echo "<br><br>";
 
 
 
