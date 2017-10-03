@@ -47,6 +47,7 @@ echo "<br><br>";
 echo ord($date);
 echo "<br><br>";
 
+echo substr($date,-2);
 echo "<br><br>";
 
 echo "<br><br>";
