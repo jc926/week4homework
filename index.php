@@ -14,5 +14,14 @@ $datechange = str_replace("-", "/", $date);
 print_r($datechange);
 echo"<br><br>";
 
+if ($date > $tar){
+	echo "the future";
+}
+elseif ($date < $tar) {
+	echo "the past";
+}
+else
+	echo "Oops";
+
 
 ?>
