@@ -54,6 +54,19 @@ print_r (explode("/",$date,3));
 echo "<br><br>";
 
 
+foreach ($year as $value) {
+        switch ($value%4) {
+          case 0;
+	     if (($value%100) != 0 || ($value%400) == 0) {
+	      echo 'true ' ;
+	    } else {
+	      echo 'false ' ;
+	    }
+	      break;
+	      default;
+	      echo 'false ' ;
+        }
+}
 echo "<br><br>";
 
 
