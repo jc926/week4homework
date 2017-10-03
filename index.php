@@ -10,8 +10,8 @@ echo "The value of \$year: ";
 print_r($year);
 
 echo"<br><br><br>";
-$datechange = str_replace("-", "/", $date);
-print_r($datechange);
+$date = str_replace("-", "/", $date);
+print_r($date);
 echo"<br><br>";
 
 if ($date > $tar){
@@ -22,6 +22,21 @@ elseif ($date < $tar) {
 }
 else
 	echo "Oops";
+echo "<br><br>";
+
+$lastPos = 0;
+$positions = array();
+
+while (($lastPos = strpos($date, "/" , $lastPos))!== false) {
+    $positions[] = $lastPos;
+	$lastPos = $lastPos + strlen("/");
+}
+
+
+foreach ($positions as $value) {
+    echo $value ."<br />";
+}
+echo "<br><br>";
 
 
 ?>
