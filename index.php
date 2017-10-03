@@ -50,7 +50,10 @@ echo "<br><br>";
 echo substr($date,-2);
 echo "<br><br>";
 
+print_r (explode("/",$date,3));
 echo "<br><br>";
+
+
 echo "<br><br>";
 
 
