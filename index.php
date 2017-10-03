@@ -39,5 +39,15 @@ foreach ($positions as $value) {
 echo "<br><br>";
 
 echo str_word_count($date);
+echo "<br><br>";
+
+echo strlen($date);
+echo "<br><br>";
+
+
+
+
+
+
 
 ?>
